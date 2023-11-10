@@ -1,18 +1,29 @@
+from qwerty import*
+
+
 def cityList(x):
+    count=0
     lst=[]
     x = x.replace(' ','-')
-    print(x)
+    # print(x)
     x = x.split(',')
     # print(x) 
     # print(x[0])
-    for i in range(0, len(x), 4):
+    for i in range(0, len(x), 5):
         lst.append(x[i])
-    print(lst)
+        count+=1
+        if count==5:
+            break
+    # print(lst)
     for i in range(len(lst)):
         lst=','.join(lst)
         lst=lst.replace('-', ' ')
         lst=lst.split(',')
     print(lst)
 
+b='''
+SprockhÃ¶vel,Germany,North Rhine-Westphalia,2829998
 
-cityList('les Escaldes,Andorra,Escaldes-Engordany,3040051,Dubai,United Arab Emirates,Dubai,292223,Andorra la Vella,Andorra,Andorra la Vella,3041563')
+'''
+
+cityList(b)
