@@ -5,8 +5,8 @@ def cityList(x):
     print(x)
     x = x.split()
     print(x) 
-    for i in range(len(x)+4):
-        lst.append(i)
+    for i in range(0, len(x), 4):
+        lst.append(x[i])
     print(lst)
 
 
