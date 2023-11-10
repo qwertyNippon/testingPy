@@ -1,5 +1,5 @@
 from qwerty import*
-
+# make a dictionary, if the alphabet isn't in it append then remove.
 
 def cityList(x):
     count=0
@@ -9,7 +9,7 @@ def cityList(x):
     x = x.split(',')
     # print(x) 
     # print(x[0])
-    for i in range(0, len(x), 5):
+    for i in range(0, len(x), 4):
         lst.append(x[i])
         count+=1
         if count==5:
