@@ -6,8 +6,7 @@ def cityList(x):
     # alphabets = dict(zip(string.ascii_lowercase,  range(26)))
     # print(alphabets)
     alphabets = {'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D', 'e': 'E', 'f': 'F', 'g': 'G', 'h': 'H', 'i': 'I', 'j': 'J', 'k': 'K', 'l': 'L', 'm': 'M', 'n': 'N', 'o': 'O', 'p': 'P', 'q': 'Q', 'r': 'R', 's': 'S', 't': 'T', 'u': 'U', 'v': 'V', 'w': 'W', 'x': 'X', 'y': 'Y', 'z': 'Z'}
-    letters='qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'
-    # print(alphabets)
+    letters='qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM ,'
     count=0
     lst=[]
     x = x.replace(' ','-')
@@ -18,31 +17,33 @@ def cityList(x):
     print(x)
     for i in range(0, len(x), 4):
         lst.append(x[i])
+        print(lst)
 
 
-    # print(lst)
         # for i in range(len(lst)):
         lst=','.join(lst)
-        print(lst)
+        # print(lst)
         lst=lst.replace('-', ' ')
-        print(lst)
+        # print(lst)
         lst=lst.split(',')
-        print(lst)       
+        # print(lst)       
         lst.append(x[i])
         for x[i] in lst:
-            print(x[i])
-            if x[i] not in letters:
-                print(x[i])
-                del lst[-1]
-                # lst.pop(-1)
+            # print(x[i])
+            # print(lst)
+            if letters not in x[i]:
+                # print(x[i])
+                # del lst[-1]
+                lst.pop(-1)
+            if '/n' in x[i]:
+                lst.pop(-1)
             count+=1
             if count==5:
                 break
     print(lst)
 
-b='''
-SprockhÃ¶vel,Germany,North Rhine-Westphalia,2829998,Andorra la Vella,Andorra,Andorra la Vella,3041563
+b='''Andorra la Vella,Andorra,Andorra la Vella,3041563,SprockhÃ¶vel,Germany,North Rhine-Westphalia,2829998,Umm al Qaywayn,United Arab Emirates,Umm al Qaywayn,290594
 
 '''
 
-cityList(b)
+cityList(text)
