@@ -1,12 +1,13 @@
 from qwerty import*
-# import string
+import string
 # make a dictionary, if the alphabet isn't in it append then remove.
 
 def cityList(x):
-    # alphabets = dict(zip(string.ascii_lowercase,  range(26)))
+    alphabets = dict(zip(string.ascii_lowercase,  range(26)))
+    alphabetS = dict(zip(string.ascii_uppercase,  range(26)))
     # print(alphabets)
-    alphabets = {'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D', 'e': 'E', 'f': 'F', 'g': 'G', 'h': 'H', 'i': 'I', 'j': 'J', 'k': 'K', 'l': 'L', 'm': 'M', 'n': 'N', 'o': 'O', 'p': 'P', 'q': 'Q', 'r': 'R', 's': 'S', 't': 'T', 'u': 'U', 'v': 'V', 'w': 'W', 'x': 'X', 'y': 'Y', 'z': 'Z'}
-    letters='qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM ,'
+    # alphabet = {'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D', 'e': 'E', 'f': 'F', 'g': 'G', 'h': 'H', 'i': 'I', 'j': 'J', 'k': 'K', 'l': 'L', 'm': 'M', 'n': 'N', 'o': 'O', 'p': 'P', 'q': 'Q', 'r': 'R', 's': 'S', 't': 'T', 'u': 'U', 'v': 'V', 'w': 'W', 'x': 'X', 'y': 'Y', 'z': 'Z'}
+    # letters='qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM ,'
     count=0
     lst=[]
     x = x.replace(' ','-')
@@ -31,7 +32,7 @@ def cityList(x):
         for x[i] in lst:
             # print(x[i])
             # print(lst)
-            if letters not in x[i]:
+            if alphabets or alphabetS or ' ' not in x[i]:
                 # print(x[i])
                 # del lst[-1]
                 lst.pop(-1)
@@ -46,4 +47,4 @@ b='''Andorra la Vella,Andorra,Andorra la Vella,3041563,SprockhÃ¶vel,Germany,No
 
 '''
 
-cityList(text)
+cityList(b)
