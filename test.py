@@ -47,4 +47,6 @@ b='''Andorra la Vella,Andorra,Andorra la Vella,3041563,SprockhÃ¶vel,Germany,No
 
 '''
 
-cityList(b)
+cityList(b) 
+
+# figure out how to fix the javascript code, then add css
