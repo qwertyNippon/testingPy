@@ -54,6 +54,7 @@ cityList(b)
 
 
 #attempting to fix again
+#used chatgpt to help
 
 
 
