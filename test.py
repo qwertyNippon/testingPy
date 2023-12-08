@@ -57,6 +57,7 @@ cityList(b)
 #used chatgpt to help
 #looking good might be too early to say
 # updated wife's profile fixing bugs
+#updated the colors for the budgetting app
 
 
 
